@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  background: #a46740 url(../images/bg.jpg);
+}
+h1 {
+	font-weight: bold;
+  text-shadow: 0 2px 0 #222;
+  margin: 50px auto;
+  font-size: 30px;
+}
+
+#game {
+  border-radius: 10px;
+  border: 1px solid #666;
+  background: #232 url(../images/table.jpg);
+  width: 500px;
+  height: 460px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cards {
+  position: relative;
+  width: 380px;
+  height: 400px;
+}
+.card {
+  perspective: 600px;
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  transition: all .3s;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  transition-property: opacity, transform, box-shadow;
+  transition-duration: .3s;
+  backface-visibility: hidden;
+}
+.front {
+  background: #999 url(../images/deck.png) 0 -480px;
+  z-index: 10;
+}
+.back {
+  background: #efefef url(../images/deck.png);
+  transform: rotate3d(0,1,0,-180deg);
+  z-index: 8;
+}
+.card:hover .face,
+.card_flipped .face {
+  box-shadow: 0 0 10px #aaa;
+}
+.card_flipped .front {
+  transform: rotate3d(0,1,0, 180deg);
+  z-index: 8;
+}
+.card_flipped .back {
+  transform: rotate3d(0,1,0, 0deg);
+  z-index: 10;
+}
+.card_removed {
+  opacity: 0;
+}
+.cardAJ {background-position: -800px 0;}
+.cardAQ {background-position: -880px 0;}
+.cardAK {background-position: -960px 0;}
+.cardBJ {background-position: -800px -120px;}
+.cardBQ {background-position: -880px -120px;}
+.cardBK {background-position: -960px -120px;}
+.cardCJ {background-position: -800px -240px;}
+.cardCQ {background-position: -880px -240px;}
+.cardCK {background-position: -960px -240px;}
+.cardDJ {background-position: -800px -360px;}
+.cardDQ {background-position: -880px -360px;}
+.cardDK {background-position: -960px -360px;}
