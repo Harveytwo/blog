@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../../css/common/base.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="index">
+      <div class="sidebar_menu">
+        <ul>
+          <li>
+            <a href="javascript:;">上传平台</a>
+          </li>
+          <li>
+            <a href="javascript:;">上传banner</a>
+          </li>
+          <li>
+            <a href="javascript:;">查看信息</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right_content">
+        <!-- 上传平台 -->
+        <div class="platform hide">
+          <h3>上传平台</h3>
+          <div class="platform_upload">
+            <form action="">
+              <div>
+                <label for="">
+                  <span>平台名字：</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>平台下载地址：</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>平台icon：</span>
+                  <input type="file">
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>平台二维码：</span>
+                  <input type="file">
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>平台类别：</span>
+                  <p>
+                    <input name="paltformType" type="radio" value="hot">
+                    热门
+                  </p>
+                  <p>
+                    <input name="paltformType" type="radio" value="recomend">
+                    推荐
+                  </p>
+                  <p>
+                    <input name="paltformType" type="radio" value="other">
+                    其他
+                  </p>
+                </label>
+              </div>
+            </form>
+          </div>
+          <h3>删除平台</h3>
+          <div class="platform_delete">
+            <div class="platform_delete_form">
+              <form>
+                <label>
+                  <span>平台 id：</span>
+                  <input type="number">
+                </label>
+                <label>
+                  <span>平台名字：</span>
+                  <input type="text">
+                </label>
+              </form>
+              <div>
+                <span>查询</span>
+              </div>
+            </div>
+            <div class="platform_delete_result">
+              <p>没有找到该平台</p>
+              <div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>平台id</th>
+                      <th>平台名字</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2</td>
+                      <td>假的假的假的假的假的假的假的</td>
+                      <td><span>删除</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 上传banner -->
+        <div class="banner hide">
+          <h3>上传banner</h3>
+          <div class="banner_upload">
+            <form action="">
+              <div>
+                <label for="">
+                  <span>广告内容：</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>广告图片：</span>
+                  <div>
+                    <input type="file">
+                    <input type="file">
+                    <input type="file">
+                  </div>
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>是否需要跳转：</span>
+                  <p>
+                    <input name="bannerLink" type="radio" value="link">
+                    是
+                  </p>
+                  <p>
+                    <input name="bannerLink" type="radio" value="notLink">
+                    否
+                  </p>
+                </label>
+              </div>
+              <div>
+                <label for="">
+                  <span>属于首页或详情：</span>
+                  <p>
+                    <input name="belongPage" type="radio" value="index">
+                    首页
+                  </p>
+                  <p>
+                    <input name="belongPage" type="radio" value="details">
+                    详情
+                  </p>
+                </label>
+              </div>
+            </form>
+            
+          </div>
+          <h3>删除banner</h3>
+          <div class="banner_delete">
+            <div class="banner_delete_form">
+              <form>
+                <label>
+                  <span>banner id：</span>
+                  <input type="number">
+                </label>
+                <!-- <label>
+                  <span>平台名字：</span>
+                  <input type="text">
+                </label> -->
+              </form>
+              <div>
+                <span>查询</span>
+              </div>
+            </div>
+            <div class="banner_delete_result">
+              <p>没有找到该banner</p>
+              <div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>banner id</th>
+                      <th>广告内容</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2</td>
+                      <td>假的假的假的假的假的假的假的</td>
+                      <td><span>删除</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 查看信息 -->
+        <div class="news ">
+          <h3>查看信息</h3>
+          <div class="news_list">
+            <ul>
+              <li>
+                <div>
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息
+                </div>
+                <span>
+                  删除
+                </span>
+              </li>
+              <li>
+                <div>
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息么狗屁信息什么狗屁信息什么
+                </div>
+                <span>
+                  删除
+                </span>
+              </li>
+              <li>
+                <div>
+                  什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息什么狗屁信息
+                </div>
+                <span>
+                  删除
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="news_page">
+            <span>上一页</span>
+            <ul>
+              <li class="cur">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+            <span>下一页</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
